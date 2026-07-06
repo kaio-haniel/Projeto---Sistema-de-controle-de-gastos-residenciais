@@ -20,6 +20,7 @@ Antes de começar, certifique-se de ter instalado em sua máquina:
 * **Node.js** (versão 18 ou superior)
 
 ### 2. Configurando e Rodando o Back-end (API C#)
+
 Abra o seu terminal na pasta raiz do projeto e execute os seguintes comandos:
 ```bash
 # Navegar até a pasta do servidor
@@ -30,9 +31,12 @@ dotnet ef database update
 
 # Inicializar o servidor do Back-end
 dotnet run
+```
+
 
 ### 3. Configurando e Rodando o Front-end (React)
 Abra um segundo terminal (mantendo o do back-end rodando) e execute:
+```bash
 # Navegar até a pasta da interface
 cd frontend
 
@@ -41,3 +45,4 @@ npm install
 
 # Inicializar o servidor de desenvolvimento do React
 npm run dev
+```
