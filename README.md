@@ -16,8 +16,8 @@ Projeto Full-Stack desenvolvido como parte de um desafio técnico para gerenciam
 
 ### 1. Pré-requisitos
 Antes de começar, certifique-se de ter instalado em sua máquina:
-* **.NET SDK** (versão 8.0 ou superior)
-* **Node.js** (versão 18 ou superior)
+* **.NET SDK** 
+* **Node.js**
 
 ### 2. Configurando e Rodando o Back-end (API C#)
 
