@@ -10,10 +10,11 @@ namespace backend.Data
         }
 
         // Tabelas do banco de dados mapeadas pelo Entity Framework
+
         public DbSet<Pessoa> Pessoas { get; set; }
-        // O relacionamento abaixo possui o efeito de Exclusão em Cascata (Cascade Delete).
-        // Significa que se uma Pessoa for deletada, todas as suas Transações serão apagadas automaticamente do SQLite.
+
         public DbSet<Transacao> Transacoes { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

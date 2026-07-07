@@ -42,7 +42,7 @@ namespace backend.Controllers
 
                 var saldoLiquido = totalReceita - totalDespesa; //Saldo líquido, gerado por receita - despesa.
 
-                var GastoFinalPessoa = new PessoaTotal(); //Instanciando a classe PessoaTotal, criando um novo objeto.
+                var GastoFinalPessoa = new PessoaTotalDto(); //Instanciando a classe PessoaTotal, criando um novo objeto.
 
                 GastoFinalPessoa.Nome = pessoa.Nome; //Colocando o nome da pessoa no objeto, sendo o mesmo da pessoa analisada no looping;
                 GastoFinalPessoa.Receita = totalReceita; //Colocando o total da receita no objeto;
@@ -55,7 +55,7 @@ namespace backend.Controllers
             relatorio.TotalGeralDespesas = relatorio.PessoasTotais.Sum(p => p.Despesa); //Soma de total de despesas de todas as pessoas
             relatorio.TotalGeralSaldo = relatorio.TotalGeralReceitas - relatorio.TotalGeralDespesas; //Saldo líquido final de todas as pessoas, 
                                                                                                      // total de receitas - total de  despesas
-                                                                                                     
+
             return Ok(relatorio); //Retorno de mensagem de sucesso.
         }
 
