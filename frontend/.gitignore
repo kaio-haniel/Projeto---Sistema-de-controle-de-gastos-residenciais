@@ -27,7 +27,7 @@ node_modules/
 dist/
 
 # Back-end
-bin/
-obj/
+backend/bin/
+backend/obj/
 *.db
 *.db-journal
